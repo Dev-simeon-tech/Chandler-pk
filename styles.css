@@ -312,6 +312,12 @@ image:hover{
     background: transparent;
     border: 1px solid black;
     border-radius: 25px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.btn-style:hover{
+    background: #A47C51;
+    color: white;
 }
 .center{
     position: relative;
