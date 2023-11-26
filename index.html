@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Chandler </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <title>Chandler </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <img class="img-back" src="images/Rectangle 1.svg" alt="">
-        <nav>
-            <label id="logo" for="">Chandler pk</label>
+        <nav class="container nav-container flex space-between">
+          <a href="#" class="logo">Chandler pk</a>
             <div class="primary-nav ">
-                <ul>
+                <ul class="flex space-between">
                     <li><a href="#"> Home</a></li>
                     <li><a href="#">Services</a> </li>
                     <li><a class="nav-spec"href="#">About Us</a> </li>
@@ -27,48 +27,53 @@
         </nav>
     </header>
     <main>
-            <div class="main-cont">
-                <div class="main-adjust">
+            <div class="main-cont container flex space-between">
+                <article class="main-content">
                     <h1>Discover the 
-                        <div class=" text-slider">
-                            <div><div class="text-spec"> Ideal</div></div> 
-                            <div><div class="text-spec"> Suberb</div></div> 
-                            <div> <div class="text-spec"> Prefect</div></div> 
-                        </div>
+                        <div class=" text-slider__cont">
+                            <ul class="text-slider">
+                                <li class="text-slider__item">Perfect</li>
+                                <li class="text-slider__item">Suberb</li>
+                                <li class="text-slider__item">Ideal</li>
+                            </ul>
+                        </div> <br>
                         office with us</h1>
                     <p>We are a Real Estate Agency offering inexpensive
                         office space to small businesses or any size company
                         from small cubicles to large executive offices to help
-                        economic growth within Cleveland.</p>
-                        <input type="text" placeholder="Search for any working space...">
-                        <button class="btn">Search</button>
-                </div>
+                        economic growth within Cleveland.
+                    </p>
+                        <div class="input-box__search">
+                            <input type="text" placeholder="Search for any working space...">
+                            <button class="search-btn">Search</button>
 
-                <div>
-                    <div id="slider" >
-                        <figure >
-                            <img id="slide-1" src="images/Pic 1.svg" alt="">
-                            <img  id="slide-2"src="images/Pic 2.svg" alt="">
-                            <img  id="slide-3"src="images/Pic 3.svg" alt="">
-                            <img id="slide-4" src="images/Pic 1.svg" alt="">
-                        </figure>
-                        <div class="slider-nav">
-                            <a class="active" href="#slide-1"></a>
-                            <a href="#slide-2"></a>
-                            <a href="#slide-3"></a>
                         </div>
-                    </div>
+                </article>
+
+                <div class="a11y-carousel">
+                    <ul class="slider">
+                        <li>
+                            <img src="images/slide-1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/slide-2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/slide-3.png" alt="">
+                        </li>
+                    </ul>
+
                 </div>
         </div>
         </main>
-        <section >
-            <div class="first-sect">
-                <h1>Our Products</h1>
+        <section class="container margin-top">
+            <div class="section-head text-center">
+                <h3>Our Products</h3>
                 <p>We have wide range of different office spaces</p>
             </div>  
             <div class="img-container">
                 <div class="image">
-                    <img src="images/image 1.svg" alt="images">
+                    <img src="images/image 1.svg" alt="images" id="img">
                     <div class="overlay">
                         <div class="topic">
                             <h1>Executive Office</h1>
@@ -78,7 +83,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/image-2.svg" alt="images">
+                    <img src="images/image-2.svg" alt="images" id="img">
                     <div class="overlay">
                         <div class="topic">
                             <h1>Waiting Office</h1>
@@ -88,7 +93,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/image-3.svg" alt="images">
+                    <img src="images/image-3.svg" alt="images" id="img">
                     <div class="overlay ">
                         <div class="topic">
                             <h1 class="center-2">Cubicle</h1>
@@ -98,7 +103,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/image-4.svg" alt="images">
+                    <img src="images/image-4.svg" alt="images" id="img">
                     <div class="overlay">
                         <div class="topic">
                             <h1 class="center">Call Center</h1>
@@ -108,7 +113,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/image-5.svg" alt="images">
+                    <img src="images/image-5.svg" alt="images" id="img">
                     <div class="overlay">
                         <div class="topic">
                             <h1 class="center-2">Monocoa</h1>
@@ -118,29 +123,29 @@
                 </div>
                 
             </div> 
-            <div class="btn-2">
-                <button class="btn-style">Explore More Officies</button> 
+            <div>
+                <button class="explore-btn">Explore More Officies</button> 
             </div>
         </section>
-        <section>
-            <div class="who-container">
-                <div class="who-flex">
-                    <div>
-                        <h1>Who We Are</h1>
-                    </div>
-                    <div>
-                        <h2>A <span class="text-spec">Real Estate</span>  Agency</h2>
-                    </div>
-                    <div>
+        <section class=" who-we-are margin-top">
+            <div class="container__about-us container">
+                <article>
+                       <div class="section-head">
+
+                           <h3>Who We Are</h3>
+                           <h3>A <span class="real-agency">Real Estate</span>  Agency</h3>
+                   
+                       </div> 
+                
                         <p>Chandler Park is located in a historic landmark
                             which offers inexpensive office space to small
                             businesses to help economic growth within
                             Cleveland. Chandler Park has something for any
                             size company from small cubicles to large executive
                             offices to suites with several offices within them.</p>
-                    </div>
-                </div>
-                <div class="shaking-position">
+                    
+                </article>
+                <div >
                     <img src="images/shaking hands.jpg" alt="shaking hands and smiling">
                 </div>
             </div>
@@ -149,8 +154,8 @@
         <section>
             <div class="testimony">
 
-                <h1 >Here’s What Our Customer
-                    Say About Us</h1>
+                <h3 >Here’s What Our Customer
+                    Say About Us</h3>
             </div>
 
             <div class="testimony-cont">
@@ -167,8 +172,8 @@
                             <img src="images/Ellipse 1.svg" alt="">
                         </div>
                         <div class="adjust">
-                            <h2>Monique Wilson</h2>
-                            <h3>Chicago, IL</h3>
+                            <h3>Monique Wilson</h3>
+                            <h4>Chicago, IL</h4>
                         </div>
                     </div>
                     
@@ -187,8 +192,8 @@
                             <img src="images/Ellipse 2.svg" alt="">
                         </div>
                         <div class="adjust">
-                            <h2>Kate Morrison</h2>
-                            <h3>Chicago, IL</h3>
+                            <h3>Kate Morrison</h3>
+                            <h4>Chicago, IL</h4>
                         </div>
                     </div>
                 </div>
@@ -206,8 +211,8 @@
                             <img src="images/Ellipse 3.svg" alt="">
                         </div>
                         <div class="adjust">
-                            <h2>Jose Sandoval</h2>
-                            <h3>Chicago, IL</h3>
+                            <h3>Jose Sandoval</h3>
+                            <h4>Chicago, IL</h4>
                         </div>
                     </div>
                 </div>
@@ -225,8 +230,8 @@
                             <img src="images/Ellipse 4.svg" alt="">
                         </div>
                         <div class="adjust">
-                            <h2>Nala Goins</h2>
-                            <h3>Chicago IL</h3>
+                            <h3>Nala Goins</h3>
+                            <h4>Chicago IL</h4>
                         </div>
                     </div>
                 </div>
@@ -244,8 +249,8 @@
                             <img src="images/Ellipse 1.svg" alt="">
                         </div>
                         <div class="adjust">
-                            <h2>Monique Wilson</h2>
-                            <h3>Chicago, IL</h3>
+                            <h3>Monique Wilson</h3>
+                            <h4>Chicago, IL</h4>
                         </div>
                     </div>
                     
@@ -262,48 +267,39 @@
                     
                         <img class="cont-1" src="images/Ellipse 34.svg" alt="">
                         <img class="cont-2" src="images/Group 8.svg" alt="">
-                        <img class="cont-3"  src="images/person.svg" alt="">
+                        <img class="cont-3"  src="images/person.png" alt="">
                     </div>
-                    <div class="schedule-form">
-                        <div>
-                            <h3>Fill in your Details</h3>
-                        </div>
-                        <div>
-                            <form action="#">
+                    <div class="schedule__form-container">
+                        
+                        <form action="">
+                            <div>
                                 <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Last Name">
-                            </form>
-                        </div>
-                        <div>
-                            <form action="#">
-                                <input id="input-spec" type="text" placeholder="Email">
-                            </form>
-                        </div>
-                        <div>
-                            <form action="#" >
-                                <input type="tel" placeholder="Phone Number">
-                               
-                                <input  placeholder="Type Of Business  ">
-                                <div class="dropdown">
-                                <img class="arrow " src="images/arrow.svg" alt="">
                             </div>
-                                <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                  </div>
-                                </div>
-                            </form>
-                        </div>
+                            <div>
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div id="email">
+                                <input  type="text" placeholder="Email">
+                            </div>
+                            <div>
+
+                                <input type="tel"  placeholder="Phone Number">
+                            </div>
+                            <div>
+
+                                <input  placeholder="Type Of Business  ">
+                            </div>
+                        </form>
+
                     </div>
                 </div>
         </section>
         <!-- footer -->
         <footer>
-            <div class="foot-container">
+            <div class="foot-container container flex ">
                 <div class="foot-1">
                     <div>
-                        <h1>Chandler Pk</h1>
+                        <h2 class="footer-logo">Chandler Pk</h2>
                     </div>
                     <div>
                         <p>Chandler Park is located in a historic
@@ -320,7 +316,7 @@
                 </div>
                 <div class="foot-2">
                     <div>
-                        <h1>Quick Links</h1>
+                        <h2>Quick Links</h2>
                     </div>
                     <div>
                         <ul>
@@ -332,7 +328,7 @@
                 </div>
                 <div class="foot-3">
                     <div>
-                        <h1>Office Hours</h1>
+                        <h2>Office Hours</h2>
                     </div>
                     <div>
                         <ul>
@@ -348,7 +344,7 @@
                 </div>
                 <div class="foot-4">
                     <div>
-                        <h1>Contact Us</h1>
+                        <h2>Contact Us</h2>
                     </div>
                     <div class="foot-contact">
                        <div class="foot-flex">
@@ -381,5 +377,7 @@
                 </div>
             </div>
         </footer>
+        <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
